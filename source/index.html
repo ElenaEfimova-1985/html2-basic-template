@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Barry</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ralewayregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/comfortaaregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.js" as="script">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <span class="header__logo logo">
+          <svg class="logo__barry" aria-hidden="true" focusable="false" width="58" height="60" viewBox="0 0 58 60"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/icons/stack.svg#barry" />
+          </svg>
+          <svg class="logo__barrytext" aria-hidden="true" focusable="false" width="65" height="36" viewBox="0 0 65 36"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/icons/stack.svg#barrytext" />
+          </svg>
+          <span class="visually-hidden">Логотип интернет-магазина</span>
+        </span>
+        <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="main-nav__toggle-line"></span>
+            <span class="main-nav__toggle-line"></span>
+            <span class="main-nav__toggle-line"></span>
+            <span class="visually-hidden">Кнопка открытия меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <span class="main-nav__link main-nav__link--current">
+                Каталог
+              </span>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Новости
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Заказать
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Ягоды
+            с&nbsp;доставкой </h1>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <svg class="hero__icon" aria-hidden="true" focusable="false" width="21" height="22" viewBox="0 0 21 22"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#leaf" />
+              </svg>
+              <p class="hero__text">Отборные ягоды</p>
+            </li>
+            <li class="hero__item">
+              <svg class="hero__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#ice" />
+              </svg>
+              <p class="hero__text">Натуральный вкус сохранён методом шоковой заморозки</p>
+            </li>
+            <li class="hero__item">
+              <svg class="hero__icon hero__icon--delivery" aria-hidden="true" focusable="false" width="27" height="19"
+                viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#delivery" />
+              </svg>
+              <p class="hero__text">Доставка по Санкт-Петербургу</p>
+            </li>
+          </ul>
+          <a class="hero__link button" href="form.html">
+            Заказать
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <h2 class="catalog__title title">Каталог</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/raspberries.webp,
+                  img/catalog/raspberries@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/raspberries.jpg" srcset="img/catalog/raspberries@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод малины.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Малина
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">350 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/blackberry.webp,
+                  img/catalog/blackberry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/blackberry.jpg" srcset="img/catalog/blackberry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод ежевики.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Ежевика
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">550 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/cowberry.webp, img/catalog/cowberry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/cowberry.jpg" srcset="img/catalog/cowberry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод брусники.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Брусника
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">390 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/strawberry.webp, img/catalog/strawberry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/strawberry.jpg" srcset="img/catalog/strawberry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод клубники.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Клубника
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">450 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/cherry.webp, img/catalog/cherry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/cherry.jpg" srcset="img/catalog/cherry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод вишни.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Вишня
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">375 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/gooseberry.webp, img/catalog/gooseberry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/gooseberry.jpg" srcset="img/catalog/gooseberry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод крыжовника.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Крыжовник
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">300 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--hidden">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/blueberry.webp, img/catalog/blueberry@2x.webp 2x">
+                <img class="catalog__image" src="img/catalog/blueberry.jpg" srcset="img/catalog/blueberry@2x.jpg 2x"
+                  width="264" height="180" alt="Изображение ягод голубики.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Голубика
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">510 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--hidden">
+            <a class="catalog__link-image" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/catalog/cranberry.webp, img/catalog/cranberry@2x.webp 2x">
+                <img class="catalog__image" src="img/cranberry.jpg" srcset="img/catalog/cranberry@2x.jpg 2x" width="264"
+                  height="180" alt="Изображение ягод клюквы.">
+              </picture>
+            </a>
+            <a class="catalog__link-text" href="#">
+              Клюква
+            </a>
+            <p class="catalog__text">
+              <span class="catalog__price">320 ₽</span>
+              <span class="catalog__price">за 1 кг</span>
+            </p>
+            <a class="catalog__link button button--second" href="form.html">
+              Заказать
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <h2 class="news__title title">
+          Что новенького?
+        </h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <h3 class="news__subtitle news__subtitle--space">Новый урожай клубники</h3>
+            <div class="news__wrapper">
+              <p class="news__text">
+                К нам поступила свежая сочная ароматная клубника
+                из&nbsp;Алтайского края. Крупные отборные ягоды можно приобрести&nbsp;свежими от&nbsp;200&nbsp;гр, или
+                замороженными
+                от&nbsp;1&nbsp;кг.
+                Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.
+              </p>
+              <time datetime="2022-06-22" class="news__date">22 июня 2022</time>
+            </div>
+          </li>
+          <li class="news__item">
+            <h3 class="news__subtitle">В июне дарим скидку 15% на все свежие ягоды</h3>
+            <div class="news__wrapper">
+              <p class="news__text">
+                Свежие ягоды урожая этого года со&nbsp;скидкой 15%. Клубнику, малину, голубику, вишню доставим
+                от&nbsp;200&nbsp;гр.
+              </p>
+              <time datetime="2022-06-15" class="news__date">15 июня 2022</time>
+            </div>
+          </li>
+          <li class="news__item">
+            <h3 class="news__subtitle news__subtitle--space-m">Микс из ягод</h3>
+            <div class="news__wrapper">
+              <p class="news__text">
+                Мы приготовим для вас смеси
+                из&nbsp;различных замороженных ягод по&nbsp;вашему пожеланию. Ягодные смеси&nbsp;удобно использовать для
+                приготовления
+                напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить
+                их&nbsp;естественный вкус и&nbsp;аромат.
+              </p>
+              <time datetime="2022-06-02" class="news__date">02 июня 2022</time>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="container">
+          <h2 class="contacts__title title">
+            Где забрать ягоды?
+          </h2>
+          <p class="contacts__text">Забери ягоды с нашего склада
+            по&nbsp;адресу: </p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="16" aria-hidden="true" focusable="false" height="24"
+                viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#contacts-leaf" />
+              </svg>
+              <address class="contacts__address">Набережная Обводного канала, 101</address>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="16" aria-hidden="true" focusable="false" height="24"
+                viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#phone" />
+              </svg>
+              <a class="contacts__data" href="tel:+79105244118">+ 7 910 524 41 18</a>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="16" aria-hidden="true" focusable="false" height="24"
+                viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#mail" />
+              </svg>
+              <a class="contacts__data" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map-container">
+          <iframe class="contacts__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1325209577253!2d30.32864907700274!3d59.9133479749024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1682514198268!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <noscript>
+            <picture>
+              <source type="image/webp" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/contacts/map.webp 1x, img/contacts/map@2x.webp 2x">
+              <source media="(min-width:1180px)"
+                srcset="img/contacts/map-desktop.jpg 1x, img/contacts/map-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)"
+                srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
+              <img class="contacts__map" src="img/contacts/map.jpg" srcset="img/contacts/map@2x.jpg"
+                alt="Карта местонаходения интернет-магазина.">
+            </picture>
+          </noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__container">
+        <span class="footer__logo logo">
+          <svg class="logo__barry" aria-hidden="true" focusable="false" width="58" height="60" viewBox="0 0 58 60"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/icons/stack.svg#barry" />
+          </svg>
+          <svg class="logo__barrytext" aria-hidden="true" focusable="false" width="65" height="36" viewBox="0 0 65 36"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/icons/stack.svg#barrytext" />
+          </svg>
+          <span class="visually-hidden">Логотип интернет-магазина</span>
+        </span>
+        <ul class="footer__list social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#telegram" />
+              </svg>
+              <span class="visually-hidden">telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#vkontakte" />
+              </svg>
+              <span class="visually-hidden">vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/icons/stack.svg#youtube" />
+              </svg>
+              <span class="visually-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__copyright-text">HTML Academy</span>
+        <svg class="footer__copyright-icon" aria-hidden="true" focusable="false" width="20" height="24"
+          viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/icons/stack.svg#htmlacademy" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+
+</html>
